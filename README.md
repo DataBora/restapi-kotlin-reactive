@@ -12,39 +12,10 @@
   
 - **PostgreSQL:** The project relies on PostgreSQL as the database management system, providing a powerful and open-source relational database solution.
 
-## Project Structure
-
-project-root/
-|-- src/
-|   |-- main/
-|       |-- kotlin/
-|           |-- com/
-|               |-- example/
-|                   |-- project/
-|                       |-- model/
-|                           |-- User.kt
-|                           |-- Company.kt
-|                       |-- service/
-|                           |-- UserService.kt
-|                           |-- CompanyService.kt
-|                       |-- controller/
-|                           |-- UserController.kt
-|                           |-- CompanyController.kt
-|                       |-- dto/
-|                           |-- UserRequest.kt
-|                           |-- UserResponse.kt
-|                           |-- CompanyRequest.kt
-|                           |-- CompanyResponse.kt
-|                       |-- repository/
-|                           |-- UserRepository.kt
-|                           |-- CompanyRepository.kt
-
-
-
-
 ## Usage
 
-You can find Rest End Point within: databora-restapi-reactive.postman_collection JSON file in root
+You can find REST END-POINTS within: databora-restapi-reactive.postman_collection JSON file in the root.
+Also you can run SQL query in pgAdmin from file: SQL for Postgresql so that you have schema ready for END-POINTS.
 
 
 ## Acknowledgments
