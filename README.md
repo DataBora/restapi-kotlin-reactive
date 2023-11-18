@@ -14,7 +14,7 @@
 
 ## Usage
 
-You can find REST END-POINTS within: databora-restapi-reactive.postman_collection JSON file in the root.
+You can find REST END-POINTS within: databora-restapi-reactive.postman_collection JSON file in the root. <br>
 Also you can run SQL query in pgAdmin from file: SQL for Postgresql so that you have schema ready for END-POINTS.
 
 
