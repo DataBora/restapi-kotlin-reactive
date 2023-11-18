@@ -1,0 +1,49 @@
+--POSTGRESQL
+
+-- Create a database
+CREATE DATABASE IF NOT EXISTS application;
+
+
+-- Create the company table
+CREATE TABLE company (
+    id SERIAL NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL
+);
+
+-- Create the app_user table
+CREATE TABLE app_user (
+    id SERIAL NOT NULL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    name VARCHAR(255) NOT NULL,
+    age INT not null,
+    company_id BIGINT NOT NULL REFERENCES application.company(id) on delete cascade
+);
+
+-- Insert statements for the company table
+INSERT INTO company (name, address) VALUES
+('ABC Company', '123 Main Street'),
+('XYZ Corporation', '456 Oak Avenue'),
+('Tech Solutions Ltd', '789 Maple Lane'),
+('Global Innovations Inc', '101 Pine Road'),
+('Data Services Co', '202 Cedar Street'),
+('Software Innovators', '303 Elm Boulevard'),
+('Web Systems International', '404 Birch Avenue'),
+('Future Tech Enterprises', '505 Spruce Lane'),
+('Alpha Industries', '606 Redwood Road'),
+('Innovate Solutions', '707 Sycamore Street');
+
+-- Insert statements for the app_user table
+INSERT INTO app_user (email, name, age, company_id) VALUES
+('user1@example.com', 'John Doe', 25, 1),
+('user2@example.com', 'Jane Smith', 30, 2),
+('user3@example.com', 'Bob Johnson', 28, 3),
+('user4@example.com', 'Alice Williams', 22, 4),
+('user5@example.com', 'Charlie Brown', 35, 5),
+('user6@example.com', 'Emily Davis', 29, 6),
+('user7@example.com', 'David Wilson', 31, 7),
+('user8@example.com', 'Eva Martin', 26, 8),
+('user9@example.com', 'Frank Miller', 33, 9),
+('user10@example.com', 'Grace Turner', 27, 10);
+
+
