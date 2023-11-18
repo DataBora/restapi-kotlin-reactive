@@ -1,6 +1,4 @@
-# Project Name
-
-REST API with Kotlin 
+# REST API with Kotlin
 
 ## Technologies Used
 
