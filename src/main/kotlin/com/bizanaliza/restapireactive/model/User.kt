@@ -7,6 +7,7 @@ import org.springframework.data.relational.core.mapping.Table
 data class User(
     @Id val id: Long? = null,
     val email: String,
+    val password: String,
     val name: String,
     val age: Int,
     val companyId: Long
