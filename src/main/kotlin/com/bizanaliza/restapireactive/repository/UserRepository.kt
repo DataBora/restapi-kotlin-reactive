@@ -10,7 +10,7 @@ interface UserRepository: CoroutineCrudRepository<User, Long> {
     fun findByNameContaining(name: String): Flow<User>
     fun findByCompanyId(companyId: Long): Flow<User>
 
-    @Query("SELECT * FROM app_user WHERE email = :email")
+    @Query("SELECT * FROM users WHERE email = :email")
     fun byEmail(email: String): Flow<User>
 
 
