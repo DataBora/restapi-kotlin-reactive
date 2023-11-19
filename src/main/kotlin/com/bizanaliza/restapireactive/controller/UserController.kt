@@ -56,6 +56,7 @@ class UserController(private val userService: UserService) {
 private fun UserRequest.toModel(): User =
     User(
         email = this.email,
+         password = this.password,
         name = this.name,
         age = this.age,
         companyId = this.companyId
