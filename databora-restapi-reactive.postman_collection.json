@@ -9,6 +9,21 @@
 		{
 			"name": "Get All Users",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "0254f2c6-1dde-4b17-b9f1-a50fb2d83dd8",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -130,11 +145,26 @@
 		{
 			"name": "Create Company",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"BizAnaliza\",\r\n    \"address\": \"777 Nova Pazova\"\r\n}",
+					"raw": "{\r\n    \"name\": \"BizAnaliza\",\r\n    \"address\": \"3377 Nova Pazova\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -189,11 +219,26 @@
 		{
 			"name": "Create User",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"boradata@bizanaliza.com\",\r\n    \"name\": \"BigBobo\",\r\n    \"age\": 35,\r\n    \"company_id\": 11\r\n}",
+					"raw": "{\r\n    \"email\": \"sandy.rogers@bizanaliza.com\",\r\n    \"password\": \"pass1234\",\r\n    \"name\": \"Sandy Rogers\",\r\n    \"age\": 27,\r\n    \"company_id\": 4\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
